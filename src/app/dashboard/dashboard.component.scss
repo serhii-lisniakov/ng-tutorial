@@ -1,0 +1,33 @@
+.dashboard {
+    &_wrapper {
+        max-width: 50%;
+        margin: 0 auto;
+        background-color: rgb(163, 197, 231);
+        padding: 10px 40px;
+        border-radius: 25px;
+        min-height: 50vh;
+    }
+    &_title {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+    &_grid {
+        display: flex;
+        justify-content: space-between;
+    }
+    &_item {
+        width: calc(25% - 10px);
+        background-color: rgb(46, 96, 153);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        height: 100px;
+        transition: .3s;
+        &:hover {
+            background-color: rgb(34, 69, 109);
+        }
+    }
+}
