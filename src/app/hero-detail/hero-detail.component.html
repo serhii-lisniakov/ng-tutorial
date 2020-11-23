@@ -1,0 +1,21 @@
+<div class="heroes-details_wrapper">
+    <div *ngIf="hero">
+        <div class="heroes-details_title">
+            <h3>Hero's details:</h3>
+        </div>
+        <div class="heroes-details_input">
+            <label>Name: 
+                <input
+                    [(ngModel)]="hero.name"
+                    placeholder="name"
+                />
+            </label>
+            <label>ID: <span class="heroes-details_id">{{hero.id}}</span></label>
+        </div>
+    </div>
+
+    <div *ngIf="!hero">No hero</div>
+
+    <button class="heroes-details_btn" (click)="goBack()"><-- go back</button>
+    <button class="heroes-details_btn" (click)="save()">save</button>
+</div>

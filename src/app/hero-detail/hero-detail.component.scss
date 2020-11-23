@@ -1,0 +1,39 @@
+.heroes-details {
+    &_wrapper {
+        max-width: 50%;
+        margin: 0 auto;
+        background-color: rgb(163, 197, 231);
+        padding: 10px 40px;
+        border-radius: 25px;
+    }
+    &_title {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+    &_input {
+        label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        input {
+            display: inline;
+            width: 100%;
+            background: none;
+            border: none;
+            border-bottom: 1px solid #00000048;
+            padding: 5px 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+    }
+    &_id {
+        font-size: 24px;
+        flex-grow: 1;
+        text-align: center;
+    }
+    &_btn {
+        padding: 1px 4px;
+        font-size: 12px;
+    }
+}
