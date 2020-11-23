@@ -1,0 +1,32 @@
+.search-box {
+    &_wrapper {
+        margin-top: 20px;
+        font-size: 20px;
+        * {
+            transition: .3s;
+        }
+    }
+    input {
+        width: 100%;
+        margin-top: 10px;
+        padding: 3px 20px;
+        border: none;
+        background: none;
+        border-bottom: 1px solid  #0000003d;
+    }
+    &_result {
+        list-style: none;
+        li {
+            border: 1px solid #0000003d;
+            display: flex;
+            a {
+                padding: 3px 20px;
+                width: 100%;
+                color: inherit;
+                &:hover {
+                    background-color: #0000003d;
+                }
+            }
+        }
+    }
+}
