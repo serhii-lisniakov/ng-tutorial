@@ -1,0 +1,25 @@
+.title {
+    font-size: 22px;
+    color: #369;
+    text-align: center;
+    background-color: rgb(163, 197, 231);
+    padding: 10px;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    a {
+        width: 200px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #369;
+        background-color: rgb(255, 255, 255);
+        &.active {
+            background-color: rgb(163, 197, 231);
+            color: #fff;
+        }
+    }
+}
